@@ -1,0 +1,27 @@
+GET http://localhost:5000/api/mahasiswa
+
+###
+GET http://localhost:5000/api/mahasiswa/6845b0805c3e8ae957251c42
+
+###
+POST http://localhost:5000/api/mahasiswa
+Content-Type: application/json
+
+{
+    "nama": "John Doe",
+    "nim": "123456789",
+    "jurusan": "Teknik Informatika"
+}
+
+###
+PUT http://localhost:5000/api/mahasiswa/6846889ab5e7eaed60a0f087
+Content-Type: application/json
+
+{
+    "nama": "Jane Doe",
+    "nim": "987654321",
+    "jurusan": "Sistem Informasi"
+}
+
+###
+DELETE http://localhost:5000/api/mahasiswa/6846889ab5e7eaed60a0f087
